@@ -1,0 +1,31 @@
+h1, h2, .mensaje {
+    text-align: center;
+}
+
+#contenido {
+    margin-top: 40px;
+}
+.borrar-tweet,
+.borrar-tweet:hover {
+    float: right;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+li:nth-child(odd){
+    background-color: aqua;
+    border-radius: 5px;
+
+}
+li:nth-child(even){
+    background-color: rgb(132, 211, 132);
+    border-radius: 5px;
+}
+li{
+    padding: 1.2rem;
+}
+.mensaje{
+    padding: 7px;
+    border-radius: 3px;
+}
