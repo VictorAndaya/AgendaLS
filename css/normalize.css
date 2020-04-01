@@ -395,7 +395,7 @@ legend {
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
 
-textarea,input{
+textarea{
   overflow: auto;
 }
 

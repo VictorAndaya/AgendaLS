@@ -232,7 +232,7 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
-textarea,input,
+textarea,
 select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
@@ -249,11 +249,11 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
-textarea,input {
+textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none; }
-textarea,input {
+textarea {
   min-height: 65px;
   padding-top: 6px;
   padding-bottom: 6px; }
