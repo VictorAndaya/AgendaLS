@@ -232,7 +232,7 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
-textarea,
+textarea,input,
 select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
@@ -249,11 +249,11 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
-textarea {
+textarea,input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none; }
-textarea {
+textarea,input {
   min-height: 65px;
   padding-top: 6px;
   padding-bottom: 6px; }
@@ -264,7 +264,7 @@ input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
-textarea:focus,
+textarea:focus,input:focus,
 select:focus {
   border: 1px solid #33C3F0;
   outline: 0; }

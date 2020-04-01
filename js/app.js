@@ -2,6 +2,7 @@
 const listaTweets = document.getElementById('lista-tweets');
 const textarea = document.querySelector('#tweet');
 const mensaje = document.querySelector('.mensaje');
+const teclaEnter = 13;
 
 //Event Listeners
 eventListeners();
@@ -18,12 +19,19 @@ function eventListeners(){
     
     //Evento que limpia el campo 
     document.querySelector('#formulario').addEventListener('submit', limpiarCampo);
+
+    textarea.addEventListener('keypress',function(e){
+        if(e.keyCode == teclaEnter){
+            agregarTweet();
+            limpiarCampo();
+        }
+    })
 }
 
 //Funciones
 //Añade tweet del formulario
 function agregarTweet(e){
-    e.preventDefault();
+    //e.preventDefault();
     
     //lee el valor del textarea
     const tweet = document.getElementById('tweet').value;
